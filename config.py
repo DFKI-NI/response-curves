@@ -12,7 +12,7 @@ from optimization.model_optimizer import ModelOptimizer, SupervisedModelOptimize
 from optimization.parameter import Parameter
 
 
-N_SAMPLES = 3_0_000
+N_SAMPLES = 1_000_000
 
 
 class D3Configuration:
