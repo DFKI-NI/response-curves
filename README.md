@@ -6,11 +6,11 @@ They are based based on the Time to Response (TTR), which is the (weighted) aver
 To determine true positives, false positives and false negatives, an acceptable maximum delay $\Delta_\text{max}$ is required.
 Rather than choosing an arbitrary value, evaluating $\lim \Delta_\text{max} \to \infty$ allows the creation of \emph{Response Curves}, which provide more comprehensive information about a detector's behavior.
 Response Curves can include information about both the TTR, and the correctness of the detection measured by metrics such as the $F_1$ score.
-However, Response Curves require ground truth information about the concept drift.
 
 Response Curves are suitable for abrupt, gradual and incremental concept drift and enable the evaluation of different detection approaches, including supervised and unsupervised concept drift detection.
+Response Curves require ground truth information about the concept drift.
 
-The experiments provided in this repository show the value of response curves with the following examples:
+The experiments provided in this repository show the value of Response Curves with the following examples:
 - Example 1: Shows a comparison of two unsupervised concept drift detectors on a data stream with abrupt concept drift
 - Example 2: Shows the tradeoff between timely and robust detection using different configurations of D3 on a data stream with abrupt concept drift
 - Example 3: Shows that testing for concept drift less often can have a distinct effect on the predictive performance, although the computational performance will be much improved.
@@ -30,6 +30,8 @@ This study is implemented in `Python 3.10`.
 1. Install dependencies, e.g., `pip install -r requirements.txt`
 2. Execute `python main.py`
 3. View the results, which are saved in 5 .pdf files
+
+If you merely want to check that the code works, change `N_SAMPLES` in `config.py`.
 
 ## Funding
 This work was funded by the Volkswagen Stiftung (Volkswagen Foundation) and Niedersächsisches Ministerium für Wissenschaft und Kultur (Lower Saxony's Ministry for Science and
